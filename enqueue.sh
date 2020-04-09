@@ -30,4 +30,4 @@ find $DEST/$SOURCE -iname '*.rar' -execdir rm -rf {} \;
 find $DEST/$SOURCE -iname '*.r[0-9][0-9]' -execdir rm -rf {} \;
 
 echo "adding file to convert queue"
-echo "${SOURCE} ${DEST}"
+echo "${SOURCE} ${DEST}" > convertlist.txt
